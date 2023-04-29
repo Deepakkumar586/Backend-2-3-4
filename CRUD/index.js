@@ -5,7 +5,7 @@
 const express = require("express")
 const app = express()
 
-//env file jo bhi config pda hua hai vo process object ke ander load ho jayegi agar port no.milgya to theek nhi to 4000 port par host kara denge
+//env file jo bhi config pda hua hai vo process object ke ander load ho jayegi agar port no.milgya to theek 
 require("dotenv").config();
 const PORT = process.env.PORT;
 
