@@ -29,6 +29,6 @@ app.listen(PORT, () => {
 
 // default route par server work ki hime page par ye show hoga
 app.get("/", (req, res) => {
-    res.send(`<h1>this is My Home page</h1>`)
+    res.send(`<h1>this is My First Website Page</h1>`)
 }
 )

@@ -27,3 +27,17 @@ exports.createPost = async (req, res) => {
     }
 
 }
+exports.getAllPosts = async (req, res) => {
+    try {
+        const posts = await Post.find().populate("likes").populate("comments").exec();
+        res.json({
+            posts,
+        })
+    }
+    catch (err) {
+        return res.status(400)({
+            error: "Enter while fetching Post"
+        })
+
+    }
+}
